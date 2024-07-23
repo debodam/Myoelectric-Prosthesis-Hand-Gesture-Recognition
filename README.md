@@ -4,6 +4,10 @@
 
 This project demonstrates a hand gesture-controlled servo system where an Arduino board controls multiple servos based on hand gestures detected by a computer vision system using OpenCV. The goal is to create a system where the position of servos can be adjusted in real-time based on the gestures recognized by the Python application.
 
+## Demo GIF
+
+![Hand Gesture Recognition Demo](media/HandGestureRecording.gif)
+
 ## Components
 
 - **Arduino Board**: Controls the servos.
@@ -28,7 +32,7 @@ This file includes the Python application that utilizes OpenCV to detect hand ge
 ### Communication Protocol
 
 - **Serial Baud Rate**: 9600 bps (ensure consistency between Python and Arduino code).
-- **Data Format**: The Python application sends gesture data in the following format: 
+- **Data Format**: The Python application sends gesture data in the following format:
   - **Index**: Integer value representing the servo to control.
   - **Value**: Float value representing the desired position for the servo.
 
@@ -42,6 +46,7 @@ This file includes the Python application that utilizes OpenCV to detect hand ge
 ### Software Setup
 
 1. **Install Required Libraries**:
+
    - **Python**: `opencv-python`, `pyserial`
      ```bash
      pip install opencv-python pyserial
@@ -49,6 +54,7 @@ This file includes the Python application that utilizes OpenCV to detect hand ge
    - **Arduino IDE**: Install the IDE from the [Arduino website](https://www.arduino.cc/en/software).
 
 2. **Upload Arduino Code**:
+
    - Open `hand_gesture_servo_control.ino` in the Arduino IDE.
    - Select the appropriate board and port.
    - Upload the code to the Arduino.
@@ -62,4 +68,3 @@ This file includes the Python application that utilizes OpenCV to detect hand ge
 1. **Run the Python Script**: Execute `app.py` to start detecting hand gestures and sending commands.
 2. **Observe Servo Movements**: The servos should move according to the gestures detected by the Python application.
 3. **Adjust Gestures**: Modify the Python code to adjust how gestures are mapped to servo positions.
-
