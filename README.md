@@ -4,7 +4,7 @@
 
 This project demonstrates a hand gesture-controlled servo system where an Arduino board controls multiple servos based on hand gestures detected by a computer vision system using OpenCV. The goal is to create a system where the position of servos can be adjusted in real-time based on the gestures recognized by the Python application.
 
-## Demo GIF
+## Hand Gesture Recognition
 
 ![Hand Gesture Recognition Demo](media/HandGestureRecording.gif)
 
